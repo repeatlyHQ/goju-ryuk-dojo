@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Goju-Ryuk Dojo</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header>
     <h1>Goju-Ryuk Virtual Dojo</h1>
     <p>Welcome to the dojo of Immortally Dan. Begin your journey, student!</p>
   </header>
 
+  <section id="attendance">
+    <p>Congratulations, showing up is half the battle!</p>
+    <button id="markAttendance">Mark Attendance</button>
+  </section>
+
   <main>
     <section id="lesson">
       <h2>Lesson 1: Heian Shodan</h2>
       <p>Follow these moves to master the basics of kata.</p>
+      <p>Pacing, Eye Direction, Kiai.</p>
       <button id="startLesson">Start Lesson</button>
     </section>
 
+
+    <section id="reflection">
+      <h2>Take a deep breath, and reflect on today's learnings</h2>
+      <input type="text" id="lessonReflection" placeholder="Write your top lesson of the day..." />
+      <button id="submitReflection">Submit Reflection</button>
+    </section>
+
+    <section id="userInputDisplay">
+      <h2>Your Takeaway for Today</h2>
+      <p id="reflectionDisplay">You haven’t submitted a reflection yet.</p>
+    </section>
+
+
     <section id="progress">
       <h2>Your Progress</h2>
-      <p id="progressText">No lessons completed yet.</p>
-    </section>
+
+      @@ -26,7 +50,7 @@
   </main>
 
   <footer>
     <p>&copy; 2024 Goju-Ryuk Virtual Dojo</p>
+    <p>&copy; 2025 Goju-Ryuk Virtual Dojo</p>
   </footer>
 
   <script src="script.js"></script>
-</body>
-</html>
