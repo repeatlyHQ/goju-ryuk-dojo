@@ -1,41 +1,108 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background: #222;
-    padding: 20px;
-  }
-  
-  h1 {
-    color: #f4a261;
-  }
-  
-  button {
-    background-color: #f4a261;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #e76f51;
-  }
-  
-  main {
-    margin: 20px;
-  }
-  
-  footer {
-    background: #222;
-    padding: 10px;
-    font-size: 0.8em;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #1c1f26, #2d343b);
+  color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: #e0b084;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+header {
+  background-color: #292d36;
+  padding: 20px;
+  border-bottom: 2px solid #e0b084;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #2d343b;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Progress Section */
+#progressSection {
+  background-color: #1f222a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#progressSection h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* Buttons */
+button {
+  background: #e0b084;
+  color: #1c1f26;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #f5cdaa;
+  transform: scale(1.05);
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #e0b084;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #1c1f26;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #f5cdaa;
+}
+
+/* Reflections Section */
+#reflectionDisplay {
+  font-style: italic;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #1f222a;
+  border-radius: 8px;
+  color: #f5cdaa;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer (optional future use) */
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #292d36;
+  font-size: 0.9rem;
+  color: #f4f4f9;
+  border-top: 2px solid #e0b084;
+}
